@@ -17,21 +17,42 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
+here is the url:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://my-urbio-app.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+// you can navigate to https://my-urbio-app.vercel.app/new for posting a new Blog.
+
+// but due to limitation of jsonplaceholder mock api, it returns only 100 blogs in the dashboard.
+
+// I have implemented following functionalities:
+
+1. Material-UI (MUI):
+- Use Material-UI components for the UI (e.g., cards, buttons, grids, typography).
+- Implement a responsive layout that works on both desktop and mobile devices.
+- Use MUI's theming system to customize the app's appearance (e.g., primary and
+secondary colors).
+
+2. TypeScript:
+- Define TypeScript interfaces for the blog post data structure.
+- Ensure type safety across the application (e.g., props, API responses, state).
+  
+3. RTK Query:
+- Use RTK Query to manage API calls for fetching and creating blog posts.
+- Implement caching and automatic refetching for the blog post list.
+- Handle loading and error states gracefully.
+  
+4. Functionality:
+• Blog Post List Page:
+  - Fetch and display a list of blog posts from a mock API.
+- Each post should display the title, author, and a short excerpt.
+- Add a "Read More" button that navigates to the individual post page.
+• Blog Post Detail Page:
+  - Display the full content of the blog post (title, author, body).
+• Add New Post:
+  - Include a form to add a new blog post (title, author, body).
+  - Use RTK Query to submit the new post to the mock API and update the list.
+ 
+5. implemented pagination or infinite scrolling for the blog post list
